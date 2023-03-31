@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch_App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <body>
+    <div class="demo">
+      <div id="toggle">
+        <i class="indicator"></i>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="box">
+        <h2 class="heading">Stopwatch</h2>
+        <h2 id="stopwatch"> 00 : 00 :00</h2>
+
+        <!-- Buttons with click attribute -->
+        <button id="start" onclick="start()" style="background-color: green;"> Start</button>
+        <button id="stop" onclick="stop()" style="background-color: red;"> Stop</button>
+        <button id="reset" onclick="reset()" style="background-color: royalblue;"> Reset</button>
+        <button id="lap" onclick="lap()" style="background-color: purple;"> Lap</button>
+
+      </div>
+    </div>
+    <div id="lap-container">
+      <div class="lap">
+        <h3 style="margin-bottom: 20px">Lap(s)</h3>
+        <ol id="lap_list"></ol>
+      </div>
+    </div>
+
+    <!-- JavaScript File Link -->
+    <script src="index.js"></script>
+  </body>
+
+</html>
