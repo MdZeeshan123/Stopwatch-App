@@ -43,7 +43,6 @@ body {
 }
 
 .lap {
-
   height: fit-content;
   width: fit-content;
   padding: 50px;
@@ -51,14 +50,11 @@ body {
   border-radius: 60px 10px 60px 10px;
   box-shadow: 5px 5px 10px pink;
   background-color: yellow;
-
 }
 
 .demo {
-
   display: flex;
   justify-content: right;
-
 }
 
 body.active {
@@ -80,8 +76,7 @@ body.active {
   transition: 0.5s;
   cursor: pointer;
   box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
-    inset 0 8px 8px rgba(0, 0, 0, 0.1),
-    inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+    inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
 }
 
 #toggle .indicator {
@@ -94,8 +89,7 @@ body.active {
   transform: scale(0.9);
   background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
   box-shadow: -1px -1px 20px 0px rgba(0, 0, 0),
-    inset 0 4px 4px rgba(255, 255, 255),
-    inset 0 -4px 4px rgba(255, 255, 255);
+    inset 0 4px 4px rgba(255, 255, 255), inset 0 -4px 4px rgba(255, 255, 255);
   transition: 0.5s;
 }
 
@@ -111,20 +105,17 @@ body.active {
 #toggle.active {
   background: #222;
   box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
-    inset 0 8px 60px rgba(0, 0, 0, 0.1),
-    inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+    inset 0 8px 60px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .heading {
-  color: #00FFFF;
+  color: #00ffff;
   text-align: center;
 }
-
 
 h2 {
   font-size: 30px;
   color: white;
-
 }
 
 #stopwatch {
@@ -146,7 +137,6 @@ h2 {
 
 #lap {
   color: cyan;
-
 }
 
 #lap-container {
@@ -155,7 +145,7 @@ h2 {
 }
 
 button {
- outline: none;
+  outline: none;
   height: 50px;
   text-align: center;
   width: 150px;
@@ -166,11 +156,10 @@ button {
   font-weight: bold;
   transition: all 0.25s ease;
   margin: 10px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   overflow: hidden;
   cursor: pointer;
 }
-
 
 button:hover {
   transform: scale(1.1);

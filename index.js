@@ -1,16 +1,19 @@
 /*---------- main javascipt file where all the required functions are implemented ----------*/
 
-const body = document.querySelector('body'); /*query selector is used to select html elements returns the first Element within the document that matches the specified selector, or group of selectors.*/
-const toggle = document.getElementById('toggle');
-let beat = new Audio('./tick.mp3'); /* importing the timer sound*/
-let beep = new Audio('./beep.mp3'); /*  importing the beep sound*/
+const body =
+  document.querySelector(
+    "body"
+  ); /*query selector is used to select html elements returns the first Element within the document that matches the specified selector, or group of selectors.*/
+const toggle = document.getElementById("toggle");
+let beat = new Audio("./tick.mp3"); /* importing the timer sound*/
+let beep = new Audio("./beep.mp3"); /*  importing the beep sound*/
 
 /*---------- toggle function used to switch ON/OFF the dark mode ----------*/
 
 toggle.onclick = function () {
-  toggle.classList.toggle('active');
-  body.classList.toggle('active');
-}
+  toggle.classList.toggle("active");
+  body.classList.toggle("active");
+};
 let isStop = true,
   s = 0,
   min = 0,
@@ -30,8 +33,8 @@ function start() {
 
 function lap() {
   let lapClass = document.getElementById("lap_list");
-  let entry = document.createElement('li');
-  entry.setAttribute('id', 'lapElement');
+  let entry = document.createElement("li");
+  entry.setAttribute("id", "lapElement");
   entry.appendChild(document.createTextNode(` ${hr}:${min}:${s}`));
   lapClass.appendChild(entry);
 }
@@ -54,7 +57,7 @@ function timer() {
       min++;
     }
     if (min == 60) {
-      min = 0
+      min = 0;
       hr++;
     }
     if (s < 10) {
@@ -90,4 +93,3 @@ function reset() {
   stopwatch.innerHTML = "00 : 00 : 00 ";
   document.getElementById("lap_list").innerHTML = "";
 }
-
